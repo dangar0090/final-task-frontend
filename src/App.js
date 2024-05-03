@@ -23,7 +23,7 @@ function App() {
   
       try {
         setError('');
-        const response = await axios.post('http://127.0.0.1:5000/upload', formData, {
+        const response = await axios.post('ecs-task-ALB-1605833900.us-east-1.elb.amazonaws.com/upload', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           },
