@@ -29,7 +29,7 @@ function App() {
   
       try {
         setError('');
-        const response = await axios.post('ecs-task-ALB-1605833900.us-east-1.elb.amazonaws.com:5000/upload', formData, {
+        const response = await axios.post('http://ecs-task-alb-1605833900.us-east-1.elb.amazonaws.com/upload', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           },
@@ -55,7 +55,7 @@ function App() {
 
   const checkHealth = async () => {
     try {
-      const response = await axios.get('ecs-task-ALB-1605833900.us-east-1.elb.amazonaws.com:5000/health');
+      const response = await axios.get('http://ecs-task-alb-1605833900.us-east-1.elb.amazonaws.com/health');
       if (response.status === 200) {
         setHealthStatus('Server is healthy');
       }
