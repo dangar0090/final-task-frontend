@@ -4,7 +4,7 @@ import axios from 'axios';
 function App() {
   const [file, setFile] = useState(null);
   const [error, setError] = useState('');
-  const allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'pdf', 'zip', 'doc', 'docx', 'odt', 'ods', 'odp'];
+  const allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'pdf', 'zip', 'doc', 'docx', 'odt', 'ods', 'odp', 'docx'];
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
