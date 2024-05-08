@@ -23,7 +23,7 @@ function App() {
   
       try {
         setError('');
-        const response = await axios.post('https://test-aws-app.simform.solutions/upload', formData, {
+        const response = await axios.post('http://ecs-task-alb-1605833900.us-east-1.elb.amazonaws.com/upload', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }
