@@ -25,7 +25,7 @@ function App() {
         setError('');
         const response = await axios.post('https://test-aws-app.simform.solutions/upload', formData, {
           headers: {
-            'Content-Type': 'multipart/form-data'
+            'Content-Type': 'application/pdf'
           }
         });
   
